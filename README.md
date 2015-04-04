@@ -5,14 +5,14 @@ Server API Restful Spec.
 ---------------------------
 GET - /api/user/friends - Friends list (along with game status (time/score) if currently playing)
 GET - /api/user/score - Score/level
-POST - /api/game/invite/:friendid - Send game invitation to friend
-POST - /api/game/accept/:friendid - Accept game invitation from friend
-POST - /api/game/reject/:friendid - Reject game invitation from friend
-GET - /api/game/time/:friendid - Time remaining for individual game
-GET - /api/game/round/:friendid - Fib and quips for individual round, along with round number
-POST - /api/game/round/:friendid - Answer to current individual round (update game status on backend)
-GET - /api/game/round/:friendid/:round - Result from answer to individual round
-GET - /api/game/:friendid - One[Two if available]-sided game results upon completion of all rounds
+POST - /api/game/invite/:fid - Send game invitation to friend
+POST - /api/game/accept/:fid - Accept game invitation from friend
+POST - /api/game/reject/:fid - Reject game invitation from friend
+GET - /api/game/time/:fid - Time remaining for individual game
+GET - /api/game/round/:fid - Fib and quips for individual round, along with round number
+POST - /api/game/round/:fid - Answer to current individual round (update game status on backend)
+GET - /api/game/round/:fid/:round - Result from answer to individual round
+GET - /api/game/:fid - One[Two if available]-sided game results upon completion of all rounds
 
 Flow
 ---------------------------
