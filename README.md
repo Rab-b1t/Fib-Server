@@ -4,7 +4,9 @@ Fib Server - Temporary (rough) layout of back-end functionality
 Server API Restful Spec.
 ---------------------------
 GET - /api/user/friends - Friends list (along with game status (time/score) if currently playing)
+
 GET - /api/user/score - Score/level
+
 POST - /api/game/invite/:fid - Send game invitation to friend
 POST - /api/game/accept/:fid - Accept game invitation from friend
 POST - /api/game/reject/:fid - Reject game invitation from friend
