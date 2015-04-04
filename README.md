@@ -3,8 +3,9 @@ Fib Server - Temporary (rough) layout of back-end functionality
 
 Server API Restful Spec.
 ---------------------------
-GET - /api/user/friends - Friends list (along with game status (time/score) if currently playing) //
-GET - /api/user/score - Score/level //
+```
+GET - /api/user/friends - Friends list (along with game status (time/score) if currently playing)
+GET - /api/user/score - Score/level
 POST - /api/game/invite/:fid - Send game invitation to friend
 POST - /api/game/accept/:fid - Accept game invitation from friend
 POST - /api/game/reject/:fid - Reject game invitation from friend
@@ -13,9 +14,11 @@ GET - /api/game/round/:fid - Fib and quips for individual round, along with roun
 POST - /api/game/round/:fid - Answer to current individual round (update game status on backend)
 GET - /api/game/round/:fid/:round - Result from answer to individual round
 GET - /api/game/:fid - One[Two if available]-sided game results upon completion of all rounds
+```
 
 Flow
 ---------------------------
+```
 Login
 See friends list
 See your score/level
@@ -40,8 +43,11 @@ See your score/level
 +--
 
 Display past game results
+```
 
 In Progress
 ---------------------------
+```
 GET - Friends list (along with game status (time/score) if currently playing)
 GET - Score/level
+```
